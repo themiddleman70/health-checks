@@ -7,7 +7,7 @@ import sys
 import socket
 
 def check_reboot():
-	"""Returns True if the computer has a pending reoboot."""
+	"""Returns True if the computer has a pending reboot."""
 	return os.path.exists("/run/reboot-required")
 
 def check_disk_full(disk, min_gb, min_percent):
